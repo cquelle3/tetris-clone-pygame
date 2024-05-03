@@ -14,6 +14,7 @@ class Game:
         self.screen_padding_y = 300
         self.grid_pos_x = self.screen_padding_x/2
         self.grid_pos_y = self.screen_padding_y/2
+        pygame.display.set_caption('Tetris')
         self.screen = pygame.display.set_mode((cols*cell_size + self.screen_padding_x, rows*cell_size + self.screen_padding_y))
         self.clock = pygame.time.Clock()
         self.title_font = pygame.font.Font('fonts/Fipps-Regular.otf', 40)
