@@ -342,7 +342,7 @@ class Game:
         high_score_surface = self.ui_font.render(f'High Score: {self.high_score}', True, (255, 255, 255))
         high_score_rect = high_score_surface.get_rect(center=(self.screen_padding_x/4, self.screen.get_height()-self.screen_padding_y/2))
         self.screen.blit(high_score_surface, high_score_rect)
-        #otherwise draw start UI
+        #if game not started, draw start UI
         if not self.game_start:
             if self.start_blink:
                 start_surface = self.ui_font.render('Hit SPACE to start', True, (255, 255, 255))
