@@ -230,7 +230,7 @@ class Game:
                         self.user_move_down = True
                     if event.key == pygame.K_UP:
                         self.rotate_curr_shape()
-                    if event.key == pygame.K_SPACE:
+                    if event.key == pygame.K_SPACE and not self.game_start:
                         self.game_start = True
                         self.reset_game()
                 if event.type == pygame.KEYUP:
