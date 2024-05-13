@@ -13,7 +13,7 @@ or
 pip install pygame
 ```
 
-### Run
+# Run
 Run the game using
 ```
 python game.py
